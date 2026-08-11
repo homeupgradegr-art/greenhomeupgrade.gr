@@ -68,21 +68,23 @@ if (backToTop) {
   });
 }
 
-/* ===== Lightbox for project cards ===== */
+/* ===== Lightbox for project cards + gallery items ===== */
 const lightbox = document.getElementById('lightbox');
 const lbImg = lightbox?.querySelector('img');
 const lbText = lightbox?.querySelector('p');
 let lastFocusedEl = null;
 
-document.querySelectorAll('.project-card').forEach(card => {
-  card.setAttribute('tabindex', '0');
-  card.setAttribute('role', 'button');
-  const title = card.dataset.title || '';
-  card.setAttribute('aria-label', `Προβολή έργου: ${title}`);
+document.querySelectorAll('.project-card, .gallery-item').forEach(card => {
+  if (card.tagName !== 'BUTTON') {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+  }
+  const title = card.dataset.title || card.querySelector('img')?.alt || '';
+  card.setAttribute('aria-label', `Προβολή: ${title}`);
 
   const openFromCard = () => {
     const img = card.querySelector('img');
-    if (!lightbox || !lbImg) return;
+    if (!lightbox || !lbImg || !img) return;
     lastFocusedEl = document.activeElement;
     lbImg.src = img.src;
     lbImg.alt = img.alt;
@@ -98,6 +100,23 @@ document.querySelectorAll('.project-card').forEach(card => {
       e.preventDefault();
       openFromCard();
     }
+  });
+});
+
+/* ===== Gallery filter tabs ===== */
+const galleryTabs = document.querySelectorAll('.gallery-tab');
+const galleryItems = document.querySelectorAll('.gallery-item');
+galleryTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const filter = tab.dataset.filter;
+    galleryTabs.forEach(t => {
+      t.classList.toggle('active', t === tab);
+      t.setAttribute('aria-selected', String(t === tab));
+    });
+    galleryItems.forEach(item => {
+      const show = filter === 'all' || item.dataset.category === filter;
+      item.hidden = !show;
+    });
   });
 });
 
