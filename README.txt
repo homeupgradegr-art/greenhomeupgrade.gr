@@ -1,24 +1,20 @@
-GREEN HOME UPGRADE — WEBSITE V2
-================================
+GREEN HOME UPGRADE — WEBSITE CONCEPT
+====================================
 
-Περιεχόμενα:
-- index.html            Αρχική σελίδα
-- styles.css            Responsive design / animations / 3D effects
-- script.js             Menu, filters, gallery lightbox, hero slideshow, WhatsApp form
-- assets/brand/         Λογότυπο και favicon
-- assets/projects/      Επιλεγμένες και βελτιστοποιημένες πραγματικές φωτογραφίες έργων
-- assets/certificates/  Βεβαιώσεις εκπαίδευσης / παρακολούθησης
+Περιεχόμενα φακέλου:
+- index.html      : η αρχική σελίδα
+- styles.css      : όλο το responsive design και τα 3D effects
+- script.js       : menu, animations, 3D tilt, WhatsApp φόρμα
+- assets/         : λογότυπο και εικόνες
 
-ΑΝΕΒΑΣΜΑ ΣΤΟ GITHUB
--------------------
-Ανεβάστε ΟΛΑ τα παραπάνω αρχεία και τον φάκελο assets στο root του repository.
-Το index.html πρέπει να βρίσκεται στο ίδιο επίπεδο με styles.css και script.js.
+Προεπισκόπηση:
+Ανοίξτε το index.html σε browser.
 
-GitHub Pages:
-Settings > Pages > Deploy from a branch > main > /(root)
+Σημαντικό:
+Οι εικόνες στην ενότητα "Visual Showcase" είναι ενδεικτικές σχεδιαστικές προσομοιώσεις.
+Πριν δημοσιευτεί η τελική ιστοσελίδα, αντικαταστήστε τις με πραγματικές φωτογραφίες έργων.
 
-ΣΗΜΕΙΩΣΗ
---------
-Η φόρμα επικοινωνίας δεν χρειάζεται server. Δημιουργεί μήνυμα και ανοίγει το WhatsApp στο 693 692 2327.
+Επικοινωνία που έχει μπει:
+693 692 2327
 
-Οι φωτογραφίες έργων έχουν γίνει web-optimized (WebP) για γρηγορότερη φόρτωση.
+Η φόρμα δεν χρειάζεται backend στη δοκιμαστική έκδοση. Δημιουργεί έτοιμο μήνυμα WhatsApp.
