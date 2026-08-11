@@ -1,83 +1,39 @@
-const header = document.querySelector('.site-header');
-const menuToggle = document.querySelector('.menu-toggle');
+const menuBtn = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
-const year = document.getElementById('year');
-const cursorGlow = document.querySelector('.cursor-glow');
-
-if (year) year.textContent = new Date().getFullYear();
-
-window.addEventListener('scroll', () => {
-  header?.classList.toggle('scrolled', window.scrollY > 20);
-});
-
-menuToggle?.addEventListener('click', () => {
+menuBtn?.addEventListener('click', () => {
   const open = nav.classList.toggle('open');
-  menuToggle.classList.toggle('active', open);
-  menuToggle.setAttribute('aria-expanded', String(open));
-  document.body.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
 });
+nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 
-document.querySelectorAll('.main-nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuToggle?.classList.remove('active');
-    menuToggle?.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('menu-open');
+const lightbox = document.getElementById('lightbox');
+const lbImg = lightbox?.querySelector('img');
+const lbText = lightbox?.querySelector('p');
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('img');
+    if (!lightbox || !lbImg) return;
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbText.textContent = card.dataset.title || '';
+    lightbox.hidden = false;
+    document.body.style.overflow = 'hidden';
   });
 });
+function closeLightbox(){ if(lightbox){lightbox.hidden=true;document.body.style.overflow='';}}
+lightbox?.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', e => { if(e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-const finePointer = window.matchMedia('(pointer:fine)').matches;
-
-if (finePointer) {
-  document.querySelectorAll('.tilt-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width - 0.5;
-      const y = (e.clientY - rect.top) / rect.height - 0.5;
-      const rx = (-y * 7).toFixed(2);
-      const ry = (x * 9).toFixed(2);
-      card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
-    });
-    card.addEventListener('mouseleave', () => card.style.transform = '');
-  });
-
-  window.addEventListener('mousemove', (e) => {
-    if (!cursorGlow) return;
-    cursorGlow.style.opacity = '1';
-    cursorGlow.style.left = `${e.clientX}px`;
-    cursorGlow.style.top = `${e.clientY}px`;
-  });
-}
-
-const quoteForm = document.getElementById('quoteForm');
-quoteForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const service = document.getElementById('service').value.trim();
-  const area = document.getElementById('area').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  const text = [
-    'Νέο αίτημα από greenhomeupgrade.gr',
-    `Ονοματεπώνυμο: ${name}`,
-    `Τηλέφωνο: ${phone}`,
-    `Υπηρεσία: ${service}`,
-    area ? `Περιοχή: ${area}` : '',
-    message ? `Περιγραφή: ${message}` : ''
-  ].filter(Boolean).join('\n');
-
-  const url = `https://wa.me/306936922327?text=${encodeURIComponent(text)}`;
-  window.open(url, '_blank', 'noopener');
+const form = document.getElementById('quote-form');
+form?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
+  const name = data.get('name') || '';
+  const phone = data.get('phone') || '';
+  const email = data.get('email') || '';
+  const area = data.get('area') || '';
+  const message = data.get('message') || '';
+  const text = `Καλησπέρα, ενδιαφέρομαι για προσφορά από τη Green Home Upgrade.%0A%0AΌνομα: ${encodeURIComponent(name)}%0AΤηλέφωνο: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email)}%0AΠεριοχή: ${encodeURIComponent(area)}%0AΑνάγκη: ${encodeURIComponent(message)}`;
+  window.open(`https://wa.me/306936922327?text=${text}`, '_blank');
 });

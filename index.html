@@ -4,300 +4,182 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Green Home Upgrade | Ανακαινίσεις, Μονώσεις & Γυψοσανίδες</title>
-  <meta name="description" content="Green Home Upgrade — ανακαινίσεις κατοικιών, γυψοσανίδες, μονώσεις ταρατσών, θερμομόνωση και στεγανοποίηση θεμελίων." />
-  <meta name="theme-color" content="#17351f" />
+  <meta name="description" content="Green Home Upgrade — ανακαινίσεις κατοικιών, γυψοσανίδες, μονώσεις ταρατσών, θερμομόνωση και στεγανοποίηση θεμελίων σε Χαλκιδική και Θεσσαλονίκη." />
+  <meta name="theme-color" content="#1f4721" />
   <link rel="icon" href="assets/logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Green Home Upgrade - Αρχική">
-      <img src="assets/logo.png" alt="Green Home Upgrade" />
-    </a>
-
-    <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="main-nav" aria-label="Κύρια πλοήγηση">
-      <a href="#services">Υπηρεσίες</a>
-      <a href="#showcase">Έργα</a>
-      <a href="#technology">Τεχνογνωσία</a>
-      <a href="#about">Για εμάς</a>
-      <a href="#contact">Επικοινωνία</a>
-    </nav>
-
-    <a class="header-call" href="tel:+306936922327" aria-label="Καλέστε στο 693 692 2327">
-      <span class="call-dot">☎</span> 693 692 2327
-    </a>
+    <div class="header-inner container">
+      <a class="brand" href="#top" aria-label="Green Home Upgrade — Αρχική">
+        <img src="assets/logo.png" alt="Green Home Upgrade" />
+      </a>
+      <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Κύρια πλοήγηση">
+        <a class="active" href="#top">Αρχική</a>
+        <a href="#services">Υπηρεσίες</a>
+        <a href="#projects">Έργα</a>
+        <a href="#about">Για εμάς</a>
+        <a href="#contact">Επικοινωνία</a>
+      </nav>
+      <a class="phone-pill" href="tel:+306936922327"><span>☎</span> 693 692 2327</a>
+    </div>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-media" aria-hidden="true">
-        <img src="assets/hero-house.jpg" alt="" />
-        <div class="hero-shade"></div>
-      </div>
-
-      <div class="hero-content container">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">ΑΝΑΚΑΙΝΙΣΕΙΣ • ΜΟΝΩΣΕΙΣ • ΔΟΜΗΣΗ</p>
-          <h1 id="hero-title">Δεν αλλάζουμε απλώς έναν χώρο.<br><span>Τον αναβαθμίζουμε.</span></h1>
-          <p class="hero-lead">Ολοκληρωμένες λύσεις με έμφαση στη λεπτομέρεια, στη σωστή εφαρμογή και στην πραγματική αντοχή στον χρόνο.</p>
+      <img class="hero-bg" src="assets/hero-house.jpg" alt="Σύγχρονη αναβαθμισμένη κατοικία" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">ΑΝΑΚΑΙΝΙΣΕΙΣ & ΜΟΝΩΣΕΙΣ ΥΨΗΛΗΣ ΠΟΙΟΤΗΤΑΣ</p>
+          <h1 id="hero-title">Αναβαθμίζουμε<br>το σπίτι σας με <em>ποιότητα,</em><br><em>αισθητική</em> και <em>απόλυτη<br>προστασία</em></h1>
+          <p class="hero-lead">Εξειδικευμένες λύσεις ανακαίνισης, γυψοσανίδων, μονώσεων και στεγανοποίησης με σύγχρονα υλικά και επαγγελματική συνέπεια.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary magnetic" href="#contact">Ζητήστε προσφορά <span>↗</span></a>
-            <a class="btn btn-ghost" href="#showcase">Δείτε το ύφος μας <span>→</span></a>
-          </div>
-          <div class="hero-points" aria-label="Βασικά πλεονεκτήματα">
-            <span>✓ Τεχνική συνέπεια</span>
-            <span>✓ Ποιοτικά υλικά</span>
-            <span>✓ Καθαρό αποτέλεσμα</span>
-          </div>
-        </div>
-
-        <div class="hero-object-wrap reveal delay-1" aria-hidden="true">
-          <div class="hero-object tilt-card">
-            <div class="object-glow"></div>
-            <div class="mini-roof">
-              <div class="roof-layer layer-1"></div>
-              <div class="roof-layer layer-2"></div>
-              <div class="roof-layer layer-3"></div>
-              <div class="roof-layer layer-4"></div>
-              <div class="roof-label">ΠΟΛΥΣΤΡΩΜΑΤΙΚΗ<br>ΠΡΟΣΤΑΣΙΑ</div>
-            </div>
-            <div class="object-caption">
-              <span class="pulse"></span>
-              <div><small>ΤΕΧΝΙΚΗ ΠΡΟΣΕΓΓΙΣΗ</small><strong>Η λεπτομέρεια κάνει τη διαφορά.</strong></div>
-            </div>
+            <a class="btn btn-primary" href="#contact">Ζητήστε Προσφορά <span>→</span></a>
+            <a class="btn btn-outline" href="#projects">Δείτε τα Έργα μας <span>→</span></a>
           </div>
         </div>
       </div>
-
-      <div class="trust-strip">
-        <div class="trust-item"><strong>01</strong><span>Μελέτη ανάγκης</span></div>
-        <div class="trust-item"><strong>02</strong><span>Σωστή προετοιμασία</span></div>
-        <div class="trust-item"><strong>03</strong><span>Εξειδικευμένη εφαρμογή</span></div>
-        <div class="trust-item"><strong>04</strong><span>Έλεγχος αποτελέσματος</span></div>
+      <div class="stats-wrap container">
+        <div class="stats-strip">
+          <div class="stat"><span class="stat-icon">♢</span><div><strong>100%</strong><small>Έμφαση Ποιότητας</small></div></div>
+          <div class="stat"><span class="stat-icon">☆</span><div><strong>15+</strong><small>Χρόνια Εμπειρίας</small></div></div>
+          <div class="stat"><span class="stat-icon">✓</span><div><strong>500+</strong><small>Ολοκληρωμένα Έργα</small></div></div>
+          <div class="stat"><span class="stat-icon">◷</span><div><strong>Άμεση</strong><small>Εξυπηρέτηση</small></div></div>
+          <div class="stat"><span class="stat-icon">◉</span><div><strong>Πιστοποιημένα</strong><small>Υλικά & Συνεργάτες</small></div></div>
+        </div>
       </div>
     </section>
 
-    <section class="services section" id="services">
+    <section class="section services" id="services">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="eyebrow green">ΟΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ</p>
-            <h2>Λύσεις που σχεδιάζονται<br>για να <span>κρατήσουν.</span></h2>
-          </div>
-          <p>Από την πλήρη ανακαίνιση μέχρι τη στεγανοποίηση ενός δύσκολου σημείου, κάθε εργασία αντιμετωπίζεται σαν τεχνικό έργο — όχι σαν «ένα ακόμα μερεμέτι».</p>
+        <div class="section-title center">
+          <p>ΟΛΟΚΛΗΡΩΜΕΝΕΣ ΥΠΗΡΕΣΙΕΣ</p>
+          <h2>Ολοκληρωμένες λύσεις για κάθε ανάγκη του σπιτιού σας</h2>
+          <span class="title-line"></span>
         </div>
-
         <div class="service-grid">
-          <article class="service-card tilt-card reveal">
-            <div class="service-icon house-icon" aria-hidden="true">⌂</div>
-            <div class="service-index">01</div>
-            <h3>Ανακαινίσεις κατοικιών</h3>
-            <p>Λειτουργικός επανασχεδιασμός, νέες επιφάνειες και ολοκληρωμένη αναβάθμιση του χώρου.</p>
-            <a href="#contact">Ζητήστε εκτίμηση <span>→</span></a>
+          <article class="service-card">
+            <img src="assets/service-1.jpg" alt="Ανακαινίσεις κατοικιών" />
+            <h3>Ανακαινίσεις<br>Κατοικιών</h3><span class="mini-line"></span>
+            <p>Ολικές και μερικές ανακαινίσεις με έμφαση στην ποιότητα, τη λειτουργικότητα και την αισθητική.</p>
           </article>
-
-          <article class="service-card tilt-card reveal delay-1">
-            <div class="service-icon" aria-hidden="true">▤</div>
-            <div class="service-index">02</div>
-            <h3>Γυψοσανίδες</h3>
-            <p>Χωρίσματα, οροφές, κρυφοί φωτισμοί και ειδικές κατασκευές με καθαρή γεωμετρία.</p>
-            <a href="#contact">Ζητήστε εκτίμηση <span>→</span></a>
+          <article class="service-card">
+            <img src="assets/service-2.jpg" alt="Γυψοσανίδες" />
+            <h3>Γυψοσανίδες</h3><span class="mini-line"></span>
+            <p>Κατασκευές γυψοσανίδας για τοίχους, οροφές, διακοσμητικά στοιχεία και ειδικές κατασκευές υψηλής αισθητικής.</p>
           </article>
-
-          <article class="service-card featured tilt-card reveal delay-2">
-            <div class="service-icon" aria-hidden="true">≋</div>
-            <div class="service-index">03</div>
-            <h3>Μονώσεις ταρατσών</h3>
-            <p>Σύγχρονα συστήματα στεγανοποίησης και θερμικής προστασίας για απαιτητικές επιφάνειες.</p>
-            <a href="#contact">Ζητήστε εκτίμηση <span>→</span></a>
+          <article class="service-card">
+            <img src="assets/service-3.jpg" alt="Μονώσεις ταρατσών" />
+            <h3>Μονώσεις<br>Ταρατσών</h3><span class="mini-line"></span>
+            <p>Σύγχρονες λύσεις μόνωσης για ταράτσες που εξασφαλίζουν προστασία από υγρασία και θερμοκρασιακές μεταβολές.</p>
           </article>
-
-          <article class="service-card tilt-card reveal">
-            <div class="service-icon" aria-hidden="true">◈</div>
-            <div class="service-index">04</div>
-            <h3>Στεγανοποίηση θεμελίων</h3>
-            <p>Προστασία υπόγειων και θεμελιώσεων από υγρασία με σωστή προετοιμασία και στρώσεις εφαρμογής.</p>
-            <a href="#contact">Ζητήστε εκτίμηση <span>→</span></a>
+          <article class="service-card">
+            <img src="assets/service-4.jpg" alt="Θερμομόνωση" />
+            <h3>Θερμομόνωση</h3><span class="mini-line"></span>
+            <p>Εξωτερική θερμομόνωση για εξοικονόμηση ενέργειας και βελτίωση της θερμικής άνεσης του χώρου σας.</p>
           </article>
-
-          <article class="service-card tilt-card reveal delay-1">
-            <div class="service-icon" aria-hidden="true">⌂°</div>
-            <div class="service-index">05</div>
-            <h3>Θερμομόνωση</h3>
-            <p>Λύσεις για μείωση θερμικών απωλειών και βελτίωση της ενεργειακής συμπεριφοράς του κτιρίου.</p>
-            <a href="#contact">Ζητήστε εκτίμηση <span>→</span></a>
+          <article class="service-card">
+            <img src="assets/service-5.jpg" alt="Στεγανοποίηση θεμελίων" />
+            <h3>Στεγανοποίηση<br>Θεμελίων</h3><span class="mini-line"></span>
+            <p>Αποτελεσματική στεγανοποίηση θεμελίων για προστασία από υγρασία, νερά και φθορές στον χρόνο.</p>
           </article>
-
-          <article class="service-card statement reveal delay-2">
-            <span class="statement-kicker">GREEN HOME UPGRADE</span>
-            <blockquote>«Η ποιότητα δεν φαίνεται μόνο την ημέρα που τελειώνει το έργο. Φαίνεται χρόνια μετά.»</blockquote>
+          <article class="service-card">
+            <img src="assets/service-6.jpg" alt="Ενεργειακή αναβάθμιση" />
+            <h3>Ενεργειακή<br>Αναβάθμιση</h3><span class="mini-line"></span>
+            <p>Ολοκληρωμένες λύσεις για βελτίωση ενεργειακής απόδοσης και μείωση του κόστους θέρμανσης.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="impact-band" id="about">
-      <div class="impact-orb orb-a" aria-hidden="true"></div>
-      <div class="impact-orb orb-b" aria-hidden="true"></div>
-      <div class="container impact-grid">
-        <div class="impact-copy reveal">
-          <p class="eyebrow">ΤΟ ΔΙΚΟ ΜΑΣ STANDARD</p>
-          <h2>Τεχνική ακρίβεια.<br><span>Αρχιτεκτονική αισθητική.</span></h2>
-          <p>Στόχος δεν είναι απλώς να τελειώσει η εργασία. Στόχος είναι ο πελάτης να βλέπει, να αγγίζει και να αισθάνεται την αναβάθμιση κάθε μέρα.</p>
-          <div class="impact-stats">
-            <div><strong>360°</strong><span>προσέγγιση έργου</span></div>
-            <div><strong>1</strong><span>σημείο ευθύνης</span></div>
-            <div><strong>0</strong><span>περιττές υποσχέσεις</span></div>
-          </div>
-        </div>
-
-        <div class="material-scene reveal delay-1" aria-label="Τρισδιάστατη απεικόνιση στρώσεων μόνωσης">
-          <div class="scene-card">
-            <div class="scene-title"><span>03D</span> Σύστημα μόνωσης</div>
-            <div class="layer-stack" aria-hidden="true">
-              <div class="stack-layer s1"><span>Τελική προστασία</span></div>
-              <div class="stack-layer s2"><span>Στεγανωτική στρώση</span></div>
-              <div class="stack-layer s3"><span>Θερμομονωτικό υλικό</span></div>
-              <div class="stack-layer s4"><span>Φράγμα υδρατμών</span></div>
-              <div class="stack-layer s5"><span>Υπόστρωμα</span></div>
-            </div>
-            <div class="scene-note">Exploded-view visualization</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase section" id="showcase">
+    <section class="why-band" id="about">
       <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <p class="eyebrow green">VISUAL SHOWCASE</p>
-            <h2>Η αλλαγή πρέπει να<br><span>φαίνεται.</span></h2>
-          </div>
-          <p>Οι παρακάτω εικόνες είναι ενδεικτικές σχεδιαστικές προσομοιώσεις για το ύφος της ιστοσελίδας. Θα αντικατασταθούν με πραγματικές φωτογραφίες των έργων σας.</p>
+        <p class="band-title">ΓΙΑΤΙ ΝΑ ΜΑΣ ΕΠΙΛΕΞΕΤΕ</p>
+        <div class="why-grid">
+          <div class="why-item"><span class="why-icon">♙</span><div><strong>Υψηλή Ποιότητα</strong><p>Επιλέγουμε μόνο τα καλύτερα υλικά και συνεργαζόμαστε με πιστοποιημένους επαγγελματίες.</p></div></div>
+          <div class="why-item"><span class="why-icon">♧</span><div><strong>Συνέπεια & Αξιοπιστία</strong><p>Τηρούμε χρονοδιαγράμματα και παραδίδουμε το κάθε έργο με επαγγελματισμό.</p></div></div>
+          <div class="why-item"><span class="why-icon">⌂</span><div><strong>Εξειδικευμένες Λύσεις</strong><p>Προσαρμόζουμε κάθε έργο στις δικές σας ανάγκες και στον προϋπολογισμό σας.</p></div></div>
+          <div class="why-item"><span class="why-icon">♧</span><div><strong>Άμεση Εξυπηρέτηση</strong><p>Είμαστε δίπλα σας σε κάθε βήμα, από τη μελέτη έως την ολοκλήρωση του έργου.</p></div></div>
+          <div class="why-item"><span class="why-icon">✺</span><div><strong>Εγγύηση Εργασιών</strong><p>Όλες οι εργασίες καλύπτονται από εγγύηση ποιότητας για τη δική σας ασφάλεια.</p></div></div>
         </div>
+      </div>
+    </section>
 
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-title center">
+          <p>ΠΡΟΣΦΑΤΑ ΕΡΓΑ</p>
+          <h2>Ανακαλύψτε πρόσφατες ανακαινίσεις</h2>
+          <span class="title-line"></span>
+        </div>
         <div class="project-grid">
-          <figure class="project-card reveal">
-            <img src="assets/project-1.jpg" alt="Ενδεικτική οπτική πριν και μετά ανακαίνισης" loading="lazy" />
-            <figcaption><span>ΑΝΑΚΑΙΝΙΣΗ</span><strong>Κατοικία • before / after</strong></figcaption>
-          </figure>
-          <figure class="project-card tall reveal delay-1">
-            <img src="assets/project-2.jpg" alt="Ενδεικτική οπτική μόνωσης ταράτσας" loading="lazy" />
-            <figcaption><span>ΜΟΝΩΣΗ</span><strong>Ταράτσα • προστασία</strong></figcaption>
-          </figure>
-          <figure class="project-card reveal delay-2">
-            <img src="assets/project-3.jpg" alt="Ενδεικτική οπτική αναβάθμισης όψης" loading="lazy" />
-            <figcaption><span>ΘΕΡΜΟΜΟΝΩΣΗ</span><strong>Όψη • αναβάθμιση</strong></figcaption>
-          </figure>
+          <article class="project-card" data-title="Ανακαίνιση Κατοικίας — Νέα Μουδανιά"><img src="assets/guide-project-1.jpg" alt="Ανακαίνιση κατοικίας πριν και μετά"><h3>Ανακαίνιση Κατοικίας</h3><p>Νέα Μουδανιά</p></article>
+          <article class="project-card" data-title="Μόνωση & Στεγανοποίηση Ταράτσας — Θεσσαλονίκη"><img src="assets/guide-project-2.jpg" alt="Μόνωση ταράτσας πριν και μετά"><h3>Μόνωση & Στεγανοποίηση Ταράτσας</h3><p>Θεσσαλονίκη</p></article>
+          <article class="project-card" data-title="Αναβάθμιση Όψης & Θερμομόνωση — Χαλκιδική"><img src="assets/guide-project-3.jpg" alt="Θερμομόνωση όψης πριν και μετά"><h3>Αναβάθμιση Όψης & Θερμομόνωση</h3><p>Χαλκιδική</p></article>
+          <article class="project-card" data-title="Στεγανοποίηση Ταράτσας — Θεσσαλονίκη"><img src="assets/guide-project-4.jpg" alt="Στεγανοποίηση ταράτσας πριν και μετά"><h3>Στεγανοποίηση Ταράτσας</h3><p>Θεσσαλονίκη</p></article>
         </div>
+        <div class="center"><a class="btn btn-light" href="#contact">Δείτε όλα τα έργα μας <span>→</span></a></div>
       </div>
     </section>
 
-    <section class="technology section" id="technology">
+    <section class="section technology" id="technology">
       <div class="container">
-        <div class="tech-intro reveal">
-          <p class="eyebrow green">ΤΕΧΝΟΓΝΩΣΙΑ</p>
-          <h2>Δεν κρύβουμε την τεχνική.<br><span>Την κάνουμε πλεονέκτημα.</span></h2>
+        <div class="section-title center compact">
+          <p>ΤΕΧΝΙΚΗ ΕΞΕΙΔΙΚΕΥΣΗ</p>
+          <h2>Λύσεις με τεχνογνωσία και εγγυημένο αποτέλεσμα</h2>
         </div>
-
         <div class="tech-grid">
-          <article class="tech-card reveal">
-            <div class="tech-visual"><img src="assets/tech-1.jpg" alt="Ενδεικτική απεικόνιση στρώσεων μόνωσης" loading="lazy" /></div>
-            <div class="tech-copy">
-              <span class="num">01</span>
-              <h3>Σύστημα μόνωσης ταράτσας</h3>
-              <p>Προετοιμασία, σωστές στρώσεις, στεγανωτική συνέχεια και λεπτομέρειες στα κρίσιμα σημεία.</p>
-              <ul><li>Συμβατότητα υλικών</li><li>Κλίσεις & απορροές</li><li>Προστασία αρμών</li></ul>
-            </div>
-          </article>
-
-          <article class="tech-card reverse reveal delay-1">
-            <div class="tech-visual"><img src="assets/tech-2.jpg" alt="Ενδεικτική απεικόνιση στεγανοποίησης θεμελίων" loading="lazy" /></div>
-            <div class="tech-copy">
-              <span class="num">02</span>
-              <h3>Στεγανοποίηση θεμελίων</h3>
-              <p>Η προστασία ξεκινά πριν κλείσει η κατασκευή: από το υπόστρωμα μέχρι την τελική αποστράγγιση.</p>
-              <ul><li>Περιμετρική προστασία</li><li>Στεγανωτική συνέχεια</li><li>Έλεγχος υγρασίας</li></ul>
-            </div>
-          </article>
+          <div class="tech-card"><img src="assets/tech-1.jpg" alt="Σύστημα μόνωσης ταράτσας"></div>
+          <div class="tech-card"><img src="assets/tech-2.jpg" alt="Στεγανοποίηση θεμελίων"></div>
         </div>
       </div>
     </section>
 
-    <section class="process section">
+    <section class="testimonials">
       <div class="container">
-        <div class="section-head reveal">
-          <div><p class="eyebrow green">ΠΩΣ ΔΟΥΛΕΥΟΥΜΕ</p><h2>Καθαρή διαδικασία.<br><span>Χωρίς θολά σημεία.</span></h2></div>
-          <p>Ο πελάτης πρέπει να γνωρίζει τι θα γίνει, με ποια λογική και ποιο είναι το επόμενο βήμα.</p>
-        </div>
-        <div class="timeline">
-          <div class="timeline-line"></div>
-          <article class="step reveal"><span>01</span><h3>Επικοινωνία</h3><p>Μας περιγράφετε την ανάγκη και το σημείο του έργου.</p></article>
-          <article class="step reveal delay-1"><span>02</span><h3>Αυτοψία</h3><p>Ελέγχουμε την πραγματική κατάσταση πριν προτείνουμε λύση.</p></article>
-          <article class="step reveal delay-2"><span>03</span><h3>Πρόταση</h3><p>Σας εξηγούμε τη λύση, τις φάσεις και το ζητούμενο αποτέλεσμα.</p></article>
-          <article class="step reveal delay-3"><span>04</span><h3>Εφαρμογή</h3><p>Οργανωμένη εκτέλεση με έλεγχο στα κρίσιμα σημεία.</p></article>
+        <p class="band-title">ΤΙ ΛΕΝΕ ΟΙ ΠΕΛΑΤΕΣ ΜΑΣ</p>
+        <div class="review-grid">
+          <article class="review-card"><div class="stars">★★★★★</div><p>Εξαιρετική δουλειά από την αρχή έως το τέλος. Τήρησαν τα χρονοδιαγράμματα και το αποτέλεσμα ξεπέρασε τις προσδοκίες μας!</p><strong>Μαρία Κ.</strong><small>Νέα Μουδανιά</small></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>Επαγγελματισμός, συνέπεια και άριστη ποιότητα κατασκευής. Το συστήνουμε ανεπιφύλακτα!</p><strong>Γιώργος Π.</strong><small>Θεσσαλονίκη</small></article>
+          <article class="review-card"><div class="stars">★★★★★</div><p>Η καλύτερη επιλογή για την ανακαίνιση του σπιτιού μας. Άψογη επικοινωνία και άριστο αποτέλεσμα.</p><strong>Ελένη & Νίκος Τ.</strong><small>Χαλκιδική</small></article>
         </div>
       </div>
     </section>
 
-    <section class="cta" id="contact">
-      <div class="cta-bg" aria-hidden="true"></div>
-      <div class="container cta-grid">
-        <div class="cta-copy reveal">
-          <p class="eyebrow">ΕΠΟΜΕΝΟ ΒΗΜΑ</p>
-          <h2>Έχετε έργο στο μυαλό σας;<br><span>Ας το δούμε σωστά.</span></h2>
-          <p>Συμπληρώστε τα στοιχεία και το μήνυμα θα ετοιμαστεί αυτόματα για αποστολή μέσω WhatsApp.</p>
-          <a class="big-phone" href="tel:+306936922327"><small>ΑΜΕΣΗ ΕΠΙΚΟΙΝΩΝΙΑ</small><strong>693 692 2327</strong></a>
+    <section class="contact-section" id="contact">
+      <div class="contact-bg"></div>
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <div class="contact-mark">⌂</div>
+          <h2>Έτοιμοι να<br>αναβαθμίσετε<br>το σπίτι σας;</h2>
+          <p>Επικοινωνήστε μαζί μας σήμερα για μια δωρεάν εκτίμηση και προτάσεις προσαρμοσμένες στις ανάγκες σας.</p>
+          <ul><li>☎ <a href="tel:+306936922327">693 692 2327</a></li><li>✉ <a href="mailto:info@greenhomeupgrade.gr">info@greenhomeupgrade.gr</a></li><li>● Χαλκιδική & Θεσσαλονίκη<br><span>Νέα Μουδανιά</span></li></ul>
         </div>
-
-        <form class="contact-form reveal delay-1" id="quoteForm">
-          <div class="field-row">
-            <label>Ονοματεπώνυμο<input type="text" id="name" placeholder="π.χ. Γιώργος Παπαδόπουλος" required /></label>
-            <label>Τηλέφωνο<input type="tel" id="phone" placeholder="69XXXXXXXX" required /></label>
-          </div>
-          <div class="field-row">
-            <label>Υπηρεσία
-              <select id="service" required>
-                <option value="">Επιλέξτε υπηρεσία</option>
-                <option>Ανακαίνιση κατοικίας</option>
-                <option>Γυψοσανίδες</option>
-                <option>Μόνωση ταράτσας</option>
-                <option>Στεγανοποίηση θεμελίων</option>
-                <option>Θερμομόνωση</option>
-              </select>
-            </label>
-            <label>Περιοχή<input type="text" id="area" placeholder="Περιοχή έργου" /></label>
-          </div>
-          <label>Περιγραφή έργου<textarea id="message" rows="5" placeholder="Γράψτε μας λίγα λόγια για το έργο σας..."></textarea></label>
-          <button class="btn btn-primary form-submit magnetic" type="submit">Αποστολή στο WhatsApp <span>↗</span></button>
-          <p class="privacy">Δεν αποθηκεύουμε τα στοιχεία σας σε server από αυτή τη δοκιμαστική έκδοση.</p>
+        <form class="quote-form" id="quote-form">
+          <div class="form-row"><input name="name" placeholder="Ονοματεπώνυμο" required><input name="phone" placeholder="Τηλέφωνο" required></div>
+          <div class="form-row"><input name="email" type="email" placeholder="Email"><input name="area" placeholder="Περιοχή"></div>
+          <textarea name="message" rows="4" placeholder="Περιγράψτε μας συνοπτικά την ανάγκη σας..."></textarea>
+          <button class="submit-btn" type="submit">Ζητήστε Προσφορά <span>→</span></button>
+          <p class="privacy-note">♙ Τα στοιχεία σας προστατεύονται και δεν κοινοποιούνται.</p>
         </form>
+        <img class="contact-photo" src="assets/contact-room.jpg" alt="Εσωτερικός αναβαθμισμένος χώρος" />
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="Green Home Upgrade" />
-        <p>Ανακαινίσεις, γυψοσανίδες, μονώσεις και τεχνικές λύσεις με έμφαση στη σωστή εφαρμογή.</p>
-      </div>
-      <div><h4>Πλοήγηση</h4><a href="#services">Υπηρεσίες</a><a href="#showcase">Έργα</a><a href="#technology">Τεχνογνωσία</a></div>
-      <div><h4>Επικοινωνία</h4><a href="tel:+306936922327">693 692 2327</a><a href="#contact">Ζητήστε προσφορά</a></div>
-      <div><h4>Green Home Upgrade</h4><p>greenhomeupgrade.gr</p><p class="small">© <span id="year"></span> Green Home Upgrade</p></div>
+      <div class="footer-brand"><img src="assets/logo.png" alt="Green Home Upgrade"><p>Αναβαθμίζουμε το σπίτι σας με ποιότητα, αισθητική και απόλυτη προστασία. Η ικανοποίησή σας, η δική μας επιτυχία.</p><small>© 2026 GREEN HOME UPGRADE. Με επιφύλαξη παντός δικαιώματος.</small></div>
+      <div class="footer-col"><h3>ΓΡΗΓΟΡΟΙ ΣΥΝΔΕΣΜΟΙ</h3><div class="footer-links"><a href="#top">Αρχική</a><a href="#about">Για εμάς</a><a href="#services">Υπηρεσίες</a><a href="#contact">Επικοινωνία</a><a href="#projects">Έργα</a></div></div>
+      <div class="footer-col"><h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3><p>☎ 693 692 2327</p><p>✉ info@greenhomeupgrade.gr</p><p>● Χαλκιδική & Θεσσαλονίκη<br>Νέα Μουδανιά</p></div>
+      <div class="footer-col social"><h3>ΑΚΟΛΟΥΘΗΣΤΕ ΜΑΣ</h3><div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="YouTube">▶</a></div></div>
     </div>
   </footer>
 
-  <a class="floating-whatsapp" href="https://wa.me/306936922327" target="_blank" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp">WA</a>
-  <div class="cursor-glow" aria-hidden="true"></div>
-
+  <div class="lightbox" id="lightbox" hidden><button class="lightbox-close" aria-label="Κλείσιμο">×</button><img src="" alt=""><p></p></div>
   <script src="script.js"></script>
 </body>
 </html>
