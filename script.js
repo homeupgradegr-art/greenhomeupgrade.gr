@@ -57,7 +57,7 @@ function changeSlide(step) {
   renderLightbox();
 }
 
-document.querySelectorAll('.project-card').forEach(card => {
+document.querySelectorAll('.project-card, .certificate-card').forEach(card => {
   card.addEventListener('click', () => openLightbox(card));
 });
 
